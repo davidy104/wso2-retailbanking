@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="CardService" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <log description="log:beforeTransform"/>
+            <xslt key="conf:/transform/transform.xslt"/>
+            <log description="log:afterTransform"/>
+            <send>
+                <endpoint key="cardServiceEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+    <publishWSDL uri="file:///home/david/study/wso2/wso2develop/code/retail-banking/resources/appserver/CardService.wsdl"/>
+</proxy>

@@ -95,10 +95,40 @@
   </pluginRepositories>
   <dependencies>
     <dependency>
+      <groupId>org.wso2.capp</groupId>
+      <artifactId>AccountOpeningProcess</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
       <groupId>org.wso2.sample.CardAxis2Service</groupId>
       <artifactId>CardAxis2Service</artifactId>
       <version>1.0.0</version>
       <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.CustomerDS</groupId>
+      <artifactId>CustomerDS</artifactId>
+      <version>1.0.0</version>
+      <type>dbs</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.SynapseConfigs.proxy-service</groupId>
+      <artifactId>AccountServiceProxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.RegistryResources.resource</groupId>
+      <artifactId>transform_xslt</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.SynapseConfigs.proxy-service</groupId>
+      <artifactId>CardService</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
     </dependency>
     <dependency>
       <groupId>wso2.hcc.MainframePojoService</groupId>
@@ -106,10 +136,29 @@
       <version>1.0.0</version>
       <type>aar</type>
     </dependency>
+    <dependency>
+      <groupId>com.example.SynapseConfigs.endpoint</groupId>
+      <artifactId>cardServiceEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.SynapseConfigs.endpoint</groupId>
+      <artifactId>MainFrameEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
   </dependencies>
   <properties>
-    <wso2.hcc.MainframePojoService_._MainframePojoService>capp/ApplicationServer</wso2.hcc.MainframePojoService_._MainframePojoService>
-    <org.wso2.sample.CardAxis2Service_._CardAxis2Service>capp/ApplicationServer</org.wso2.sample.CardAxis2Service_._CardAxis2Service>
+    <com.example.SynapseConfigs.endpoint_._MainFrameEP>capp/EnterpriseServiceBus</com.example.SynapseConfigs.endpoint_._MainFrameEP>
+    <com.example.SynapseConfigs.proxy-service_._AccountServiceProxy>capp/EnterpriseServiceBus</com.example.SynapseConfigs.proxy-service_._AccountServiceProxy>
     <artifact.types>jaggery/app=zip,service/rule=aar,lib/library/bundle=jar,synapse/message-processors=xml,synapse/endpointTemplate=xml,synapse/proxy-service=xml,synapse/message-store=xml,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,synapse/sequence=xml,synapse/configuration=xml,lib/registry/handlers=jar,synapse/task=xml,service/meta=xml,webapp/jaxws=war,synapse/api=xml,cep/bucket=xml,bpel/workflow=zip,lib/registry/filter=jar,service/dataservice=dbs,synapse/local-entry=xml,synapse/priority-executor=xml,synapse/event-source=xml,synapse/template=xml,lib/carbon/ui=jar,service/axis2=aar,synapse/sequenceTemplate=xml,wso2/gadget=dar,lib/synapse/mediator=jar</artifact.types>
+    <com.example.CustomerDS_._CustomerDS>capp/DataServicesServer</com.example.CustomerDS_._CustomerDS>
+    <wso2.hcc.MainframePojoService_._MainframePojoService>capp/ApplicationServer</wso2.hcc.MainframePojoService_._MainframePojoService>
+    <com.example.SynapseConfigs.endpoint_._cardServiceEP>capp/EnterpriseServiceBus</com.example.SynapseConfigs.endpoint_._cardServiceEP>
+    <com.example.SynapseConfigs.proxy-service_._CardService>capp/EnterpriseServiceBus</com.example.SynapseConfigs.proxy-service_._CardService>
+    <org.wso2.sample.CardAxis2Service_._CardAxis2Service>capp/ApplicationServer</org.wso2.sample.CardAxis2Service_._CardAxis2Service>
+    <com.example.RegistryResources.resource_._transform_xslt>capp/EnterpriseServiceBus</com.example.RegistryResources.resource_._transform_xslt>
+    <org.wso2.capp_._AccountOpeningProcess>capp/BusinessProcessServer</org.wso2.capp_._AccountOpeningProcess>
   </properties>
 </project>
